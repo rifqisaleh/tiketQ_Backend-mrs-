@@ -88,15 +88,16 @@ docker exec -it ticketq-api flask db upgrade
 
 ## 📬 Postman Collection
 
-You can try out the API using the official Postman collection:
+You can import the API collection using this file:
 
-🔗 **[Click to Open in Postman](https://api.postman.com/collections/40905279-237d355f-ef21-480b-8bd7-00acbe582458?access_key=PMAT-01K1F7HNJB3CK11QB81M8QP8ZW)**
+🗂️ [`tiketQ.postman_collection.json`](./postman/tiketQ.postman_collection.json)
 
-Or import manually using this link:
+or
 
 ```
-https://api.postman.com/collections/40905279-237d355f-ef21-480b-8bd7-00acbe582458?access_key=PMAT-01K1F7HNJB3CK11QB81M8QP8ZW
+./postman/tiketQ.postman_collection.json
 ```
+<br>
 
 💡 Make sure your local server is running at: `http://localhost:5001`
 
