@@ -1,0 +1,32 @@
+version: '3.9'
+
+services:
+  db:
+    image: postgres:15
+    container_name: ticketq-db
+    restart: always
+    environment:
+      POSTGRES_DB: ticketq_db
+      POSTGRES_USER: ticketq_user
+      POSTGRES_PASSWORD: ticketq_pass
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  web:
+    build: .
+    container_name: ticketq-api
+    depends_on:
+      - db
+    ports:
+      - "5001:5000"
+    environment:
+      FLASK_ENV: development
+      FLASK_DEBUG: 1
+      DATABASE_URL: postgresql://ticketq_user:ticketq_pass@db:5432/ticketq_db
+    volumes:
+      - .:/app
+
+volumes:
+  pgdata:

@@ -1,0 +1,26 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+env/
+venv/
+.env
+
+# VS Code settings
+.vscode/
+
+# DB or migration artifacts
+*.db
+instance/
+migrations/versions/
+
+# Env vars
+.env
+
+# OS-specific files
+.DS_Store
+Thumbs.db
