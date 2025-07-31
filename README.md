@@ -99,7 +99,7 @@ or
 ```
 <br>
 
-💡 Make sure your local server is running at: `http://localhost:5001`
+💡 <i><b>Make sure your local server is running at: `http://localhost:5001`</i></b>
 
 
 <br><br>
