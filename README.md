@@ -94,7 +94,7 @@ You can import the API collection using this file:
 
 or
 
-▶️ [Click here to open the tiketQ Postman Collection](https://rifqisaleh113-727111.postman.co/workspace/Rifqi-Saleh's-Workspace~470e69f4-ec50-477f-8294-6963e5d01d87/request/47257166-888aa840-3d12-4991-b2c6-6b44863b8f54?action=share&source=copy-link&creator=47257166)
+▶️ [Click here to open the tiketQ Postman Collection](https://rifqisaleh113-727111.postman.co/workspace/Rifqi-Saleh's-Workspace~470e69f4-ec50-477f-8294-6963e5d01d87/collection/47257166-a178a300-748b-42e6-a762-6b06192fc6ac?action=share&creator=47257166)
 
 
 <br>

@@ -55,8 +55,11 @@ def test_patch_ticket_as_used(client):
 
     patch_res = client.patch(f"/tickets/{ticket_id}")
     assert patch_res.status_code == 200
+
     data = patch_res.get_json()
-    assert data["is_used"] is True
+    assert data["message"] == "Ticket marked as used"
+    assert data["data"]["is_used"] is True
+
 
 def test_delete_ticket(client):
     res = client.post("/tickets/", json={

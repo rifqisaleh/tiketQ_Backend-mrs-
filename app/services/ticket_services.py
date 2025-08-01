@@ -24,10 +24,15 @@ def fetch_ticket_by_id(ticket_id):
 def mark_ticket_as_used(ticket_id):
     ticket = get_ticket_by_id(ticket_id)
     if not ticket:
-        abort(404, description="Ticket not found")
+        abort(404, description="Ticket not found")    
 
     ticket.is_used = True
-    return ticket_schema.dump(update_ticket(ticket))
+    update = update_ticket(ticket)
+    
+    return {
+        "message": "Ticket marked as used",
+        "data": ticket_schema.dump(update)
+    }
 
 def remove_ticket(ticket_id):
     ticket = get_ticket_by_id(ticket_id)
